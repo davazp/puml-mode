@@ -231,6 +231,8 @@
 
 Shortcuts             Command Name
 \\[puml-complete-symbol]      `puml-complete-symbol'"
+  (setq comment-start "'")
+  (setq comment-end "")
   (setq font-lock-defaults '((puml-font-lock-keywords) nil t)))
 
 (provide 'puml-mode)
