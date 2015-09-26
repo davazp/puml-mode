@@ -258,6 +258,8 @@ default output type for new buffers."
 Shortcuts             Command Name
 \\[puml-complete-symbol]      `puml-complete-symbol'"
   (make-local-variable 'puml-output-type)
+  (setq-local comment-start "'")
+  (setq-local comment-end "")
   (setq font-lock-defaults '((puml-font-lock-keywords) nil t)))
 
 (provide 'puml-mode)
